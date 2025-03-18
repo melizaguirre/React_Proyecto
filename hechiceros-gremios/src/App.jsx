@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import button from './components/button';
+import Button from './components/btn.jsx';
 import './App.css'
-
 function App() {
   const [count, setCount] = useState(0)
 
@@ -25,11 +24,11 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
-        <button nombre="Haz clic aquí" funcion={handleClick} />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Button name = "Frank" count = {count} setCount= {setCount}/>
     </>
   )
 }
